@@ -1,71 +1,9 @@
-/* before clicking hamburger */
-
-div#hamburger{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    position:absolute;
-    left: 600px;
-    top:200px;
-    width:100px;
-    height:100px;
-  }
-  
-span{
-display: block;
-width:80%;
-height:15%;
-background-color:rgba(128, 128, 128);
-border-radius: 10px;
-
--webkit-transform: rotate(0deg);
--moz-transform: rotate(0deg);
--o-transform: rotate(0deg);
-transform: rotate(0deg);
--webkit-transition: .25s ease-in-out;
--moz-transition: .25s ease-in-out;
--o-transition: .25s ease-in-out;
-transition: .25s ease-in-out;
+*{
+    margin:0;
 }
 
-div#arrowheads{
-    display: flex;
-    width: 80%;
-    height: 15%;
-}
-
-div#arrowheads>span{
-    position: relative;
-    display: block;
-    width: 50px;
-    height: 100%;
-    background-color:rgba(128, 128, 128);
-    border-radius: 10px;
-}
-
-#gapfiller{
-    top:71%;
-    position: absolute;
-}
-
-
-/* after clicking hamburger */
-#hamburger.open>.disappear{
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s 0.1s, opacity 0.1s linear;
-}
-
-#hamburger.open>#arrowbase{
-    transform: translateY(-40%) rotate(90deg) ;
-    transition: transform 250ms ease-in-out;
-}
-
-#hamburger.open>#arrowheads>#arrowhead_left{
-    transform: rotate(45deg) translateX(20%) translateY(-50%);
-}
-
-#hamburger.open>#arrowheads>#arrowhead_right{
-    transform: rotate(-45deg) translateX(-20%) translateY(-50%);
+#background{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
 }

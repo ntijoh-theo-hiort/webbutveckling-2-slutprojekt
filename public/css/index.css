@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    z-index: 1;
 }
 
 @font-face {
@@ -17,6 +18,11 @@ body{
     background-color: black;
 }
 
+#particles-js > canvas{
+    position: absolute;
+    z-index: 0;
+}
+
 header{
     display: flex;
     align-items: center;
@@ -25,9 +31,19 @@ header{
     background-color: rgba(255, 255, 255, 0.138);
 }
 
+a.desktop{
+    display: inline-block;
+}
+
+a.desktop:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.148);
+}
+
 .btn, a{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight:100;
+    color: white;
 }
 
 nav{
@@ -76,7 +92,6 @@ h2{
 }
 
 p{
-    margin: 0;
     display: inline-block;
 }
 
@@ -94,7 +109,7 @@ p{
 
 @media only screen and (max-width: 600px) {
 
-    a{
+    a.desktop{
         display: none;
     }
 
@@ -104,6 +119,16 @@ p{
 
     h1{
         font-size: 60px;
+    }
+
+    img#searchbar{
+        width:300px;
+        height:40px;
+    }
+
+    img#searchbar>a{
+        width:100%;
+        height: 100%;
     }
 
     #cookies_box{
@@ -170,13 +195,6 @@ p{
     /* end */
 
     /* after clicking hamburger */
-    nav.open{
-        position: relative;
-        opacity: 1;
-        background-color: rgba(255, 255, 255, 0.102);
-        width: 100vw;
-    }
-
     #hamburger.open>.disappear{
         visibility: hidden;
         opacity: 0;
@@ -192,6 +210,43 @@ p{
 
     #hamburger.open>#arrowheads>#arrowhead_right{
         transform: rotate(-45deg) translateX(-20%) translateY(-50%);
+    }
+
+    nav.open{
+        position: relative;
+        opacity: 1;
+        background-color: rgba(255, 255, 255, 0.102);
+        width: 100vw;
+    }
+
+    nav.open>ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+        margin: 0;
+    }
+    
+    nav.open>ul>li{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        width:90%;
+        background-color: rgba(0, 0, 0, 0.328);
+        border-radius: 4px;
+    }
+
+    nav.open>ul>li:nth-child(1){
+        margin-top: 3px;
+    }
+
+    nav.open>ul>li:nth-last-child(1){
+        margin-bottom: 3px;
+    }
+
+    nav.open>ul>li>a{
+        display: inline-block;
+        width: 100%;
     }
 }
     /* end */
