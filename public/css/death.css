@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height:100vh;
+    background-image: url('../img/DeathBackground.jpg');
+}
+
+a{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: monospace;
+    font-size:x-large;
+    color: white;
+}
+
+span{
+    display: inline-block;
+}
+
+div#skull{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 50%;
+}
+
+span#head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9%;
+    position:absolute;
+    width:100%;
+    height:80%;
+    border-radius: 50%;
+    background-color: white;
+}
+
+span.eyes{
+    border-radius: 50%;
+    width: 30%;
+    height: 40%;
+    background-color: black;
+}
+
+span#upperlip{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    position: relative;
+    top:65%;
+    width:70%;
+    height:25%;
+    background-color: white;
+}
+
+span.teeth{
+    width: 10%;
+    height: 50%;
+    background-color: black;
+}
+
+span#jaw{
+    position: absolute;
+    bottom: 0px;
+    width:70%;
+    height:10%;
+    border-radius: 10%;
+    background-color: white;
+    animation: MoveUpDown 0.5s linear infinite;
+}
+
+@keyframes MoveUpDown {
+0%, 100% {
+  transform: translateY(0);
+}
+50% {
+  transform: translateY(40%);
+}
+}
+
+@media only screen and (max-width: 800px) {
+    div#skull{
+        width:50%;
+        height:50%;
+    }
+}
