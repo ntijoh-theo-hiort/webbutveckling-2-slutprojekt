@@ -4,27 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatCBT</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="templates(stuff that's on several pages)/header.css">
     <link rel="stylesheet" href="public/css/index.css">
 </head>
-<body id="particles-js">
+<body>
     <header>
         <div id="hamburger">
-            <div class="disappear"></div>
-            <div id="arrowbase"></div>
+            <span class="disappear"></span>
+            <span id="arrowbase"></span>
             <div id="arrowheads">
-                <div class="arrowhead" id="arrowhead_left"></div>         <!-- Precis som i death.html har jag bara använt mig av massa div:ar här -->
-                <div class="arrowhead" id="arrowhead_right"></div>        <!-- för att skapa css-art, i detta fallet: hamburgar-menyn. -->
+                <span class="arrowhead" id="arrowhead_left"></span>
+                <span class="arrowhead" id="arrowhead_right"></span>
             </div>
-            <div class="disappear" id="gapfiller"></div>
+            <span class="disappear" id="gapfiller"></span>
         </div>
         <a class="desktop" href="index.html">Home</a>
         <a class="desktop" href="chat.html">Chat</a>
         <h2 id="logo">ChatCBT</h2>
         <a class="desktop" href="index.html">About</a>
-        <a class="desktop" href="chat.html">Fanpage</a>
+        <a class="desktop" href="chat.html">Thomas fan page</a>
     </header>
     <nav id="dropdown">
         <ul>
@@ -42,23 +41,11 @@
             </li>
             <li>
                 <img src="" alt="">
-                <a href="index.html">fanpage</a>
+                <a href="index.html">thomas fan page</a>
             </li>
         </ul>
     </nav>
-    <h1>WELCOME TO <br> THE <br> FUTURE</h1>
 
-    <a href="chat.html"><img id="searchbar" src="public/img/embraceyourdestiny.gif" muted autoplay></img></a>
-    <div id="cookies_box">
-        <p>Do you consent to us selling your information <br> and soul to demonic overlords?</p>
-        <div id="btn-container">
-            <a class="btn btn-outline-dark" href="death.html">Death</a>
-            <button onclick="hideCookies()" class="btn btn-outline-dark">OK</button>
-        </div>
-    </div>
-
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="public/js/index.js"></script>
     <script src="public/js/hamburger.js"></script>
 </body>
 </html>

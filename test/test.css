@@ -2,8 +2,30 @@
     margin:0;
 }
 
-#background{
-    width: 100vw;
-    height: 100vh;
-    background-color: white;
+span{
+    display: block;
+}
+
+#bigbrother{
+    position: absolute;
+    left: 800px;
+    top: 300px;
+    width: 300px;
+    height: 150px;
+    background-color: red;
+}
+
+#eyelid{
+
+}
+
+#outereye{
+    position: absolute;
+    left: 14.5%;
+    top: -20%;
+    height: calc(1.41421356237 * 150px);
+    width: calc(1.41421356237 * 150px);
+    background-color: black;
+    border-radius: 100% 20px;
+    transform: rotate(45deg); 
 }

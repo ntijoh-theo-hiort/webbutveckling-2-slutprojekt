@@ -10,18 +10,18 @@
 <body>
     <a href="index.html">resurrect?</a>
     <div id="skull">
-        <span id="head">
-            <span class="eyes" id="lefteye"></span>
-            <span class="eyes" id="righteye"></span>
-        </span>
-        <span class="nostrils" id="leftnostril"></span>
-        <span class="nostrils" id="rightnostril"></span>
-        <span id="upperlip">
-            <span class="teeth" id="tooth1"></span>
-            <span class="teeth" id="tooth2"></span>
-            <span class="teeth" id="tooth3"></span>
-        </span>
-        <span id="jaw"></span>
+        <div id="head">
+            <div class="eyes" id="lefteye"></div>
+            <div class="eyes" id="righteye"></div>
+        </div>
+        <div class="nostrils" id="leftnostril"></div>
+        <div class="nostrils" id="rightnostril"></div>    <!-- Jag hoppas att överanvändningen av div:ar här är okej eftersom -->                                                 
+        <div id="upperlip">                                <!-- att det är css konst och elementen ändå inte riktigt går att beskrivas av taggar. -->
+            <div class="teeth" id="tooth1"></div>         <!-- Man får istället gå utifrån klasser och id:n -->
+            <div class="teeth" id="tooth2"></div>
+            <div class="teeth" id="tooth3"></div>
+        </div>
+        <div id="jaw"></div>
     </div>
 
     <script src="public/js/death.js"></script>

@@ -21,11 +21,7 @@ a{
     color: white;
 }
 
-span{
-    display: inline-block;
-}
-
-div#skull{
+#skull{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -34,7 +30,7 @@ div#skull{
     height: 50%;
 }
 
-span#head{
+#head{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,14 +42,14 @@ span#head{
     background-color: white;
 }
 
-span.eyes{
+.eyes{
     border-radius: 50%;
     width: 30%;
     height: 40%;
     background-color: black;
 }
 
-span#upperlip{
+#upperlip{
     display: flex;
     justify-content: space-around;
     align-items: end;
@@ -64,13 +60,13 @@ span#upperlip{
     background-color: white;
 }
 
-span.teeth{
+.teeth{
     width: 10%;
     height: 50%;
     background-color: black;
 }
 
-span#jaw{
+#jaw{
     position: absolute;
     bottom: 0px;
     width:70%;
@@ -90,7 +86,7 @@ span#jaw{
 }
 
 @media only screen and (max-width: 800px) {
-    div#skull{
+    #skull{
         width:50%;
         height:50%;
     }

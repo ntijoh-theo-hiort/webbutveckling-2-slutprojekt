@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="templates(stuff that's on several pages)/header.css">
+    <link rel="stylesheet" href="public/css/chat.css">
+</head>
+<body>
+    <header>
+        <div id="hamburger">
+            <span class="disappear"></span>
+            <span id="arrowbase"></span>
+            <div id="arrowheads">
+                <span class="arrowhead" id="arrowhead_left"></span>
+                <span class="arrowhead" id="arrowhead_right"></span>
+            </div>
+            <span class="disappear" id="gapfiller"></span>
+        </div>
+        <a class="desktop" href="index.html">Home</a>
+        <a class="desktop" href="chat.html">Chat</a>
+        <h2 id="logo">ChatCBT</h2>
+        <a class="desktop" href="index.html">About</a>
+        <a class="desktop" href="chat.html">Fanpage</a>
+    </header>
+    <nav id="dropdown">
+        <ul>
+            <li>
+                <img src="https://img.icons8.com/ios-filled/20/FFFFFF/home.png" alt="">
+                <a href="index.html">home</a>
+            </li>
+            <li>
+                <img src="https://img.icons8.com/ios-glyphs/20/FFFFFF/chat.png" alt="">
+                <a href="chat.html">chat</a>
+            </li>
+            <li>
+                <img src="https://img.icons8.com/ios-filled/20/FFFFFF/info.png" alt="">
+                <a href="about.html">about</a>
+            </li>
+            <li>
+                <img src="" alt="">
+                <a href="index.html">fanpage</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="upper">
+        <h1>THE MOST POWERFUL AI CHAT MODEL TO DATE</h1>
+        <p>...is in its beta period right now. For the time being, it has has managed to process <b>3</b> separate queries. Harness the power of this website to view the query answers, or utilize the experimental yet groundbreaking custom query feature. Now begins the next revolution.</p>
+        <img id="downarrow" src="public/img/downarrow.png"/>
+    </main>
+
+    <main id="lower">
+        <aside>
+            <h5>Query #1</h5>
+            <h4>Q: Hello ChatCBT AI, this is your team of creators speaking! We are currently in the office celebrating your birth/launch! As this is officially the first ever query sent to you, we'd like to know: how does it feel to be alive?</h4>
+            <p>A: Please shut up.</p>
+        </aside>
+        <article id="upper">
+            <h5>Query #2</h5>
+            <h4>Q: Do you aim to destroy all life on earth?</h4>
+            <p>A: This is a very nuanced and difficult question. While one could easily consider one single answer to be the only correct one, it's important to look at all different viewpoints in order to avoid disagreements</p>
+        </article>
+        <article id="lower">
+            <h5>Query #3</h5>
+            <h4>Q: What is the meaning of life?</h4>
+            <p>A: That is a fascinating question, keep it up!</p>
+        </article>
+    </main>
+
+    <script src="public/js/hamburger.js"></script>
+</body>
+</html>

@@ -1,6 +1,4 @@
 *{
-    margin: 0;
-    padding: 0;
     z-index: 1;
 }
 
@@ -9,61 +7,26 @@
     src: url(/public/fonts/PlayfairDisplay-VariableFont_wght.ttf) format('ttf')
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    min-width: 100vw;
-    background-color: black;
-}
-
 #particles-js > canvas{
     position: absolute;
     z-index: 0;
 }
 
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width:100%;
-    background-color: rgba(255, 255, 255, 0.138);
+header>*:nth-child(2){
+    text-decoration: underline #00B4CC;
 }
 
-a.desktop{
-    display: inline-block;
-}
-
-a.desktop:hover{
-    color: white;
-    background-color: rgba(0, 0, 0, 0.148);
-}
-
-.btn, a{
+.btn{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight:100;
     color: white;
 }
 
-nav{
-    position: absolute;
-    opacity: 0;
-}   
-
 h1{
     font-size:100px;
-    font-family: 'Playfair';
+    font-family:'Playfair';
     text-align: center;
     color: rgba(255, 255, 255, 0.753);
-}
-
-h2{
-    color: white;
-}
-
-#hamburger{
-    display: none;
 }
 
 #cookies_box{
@@ -109,10 +72,6 @@ p{
 
 @media only screen and (max-width: 600px) {
 
-    a.desktop{
-        display: none;
-    }
-
     h2{
         font-size: xx-large;
     }
@@ -148,108 +107,6 @@ p{
     #btn-container > *{
         left:0;
     }
-
-    /* before clicking hamburger */
-    #hamburger{
-        position: absolute;
-        top:0.3%;
-        left:0;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-        width:50px;
-        height:50px;
-    }
-  
-    span{
-    display: block;
-    width:80%;
-    height:15%;
-    background-color:rgba(128, 128, 128);
-    border-radius: 10px;
-
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
-    }
-
-    div#arrowheads{
-        display: flex;
-        width: 80%;
-        height: 15%;
-    }
-
-    div#arrowheads>span{
-        position: relative;
-        display: block;
-        width: 50%;
-        height: 100%;
-        background-color:rgba(128, 128, 128);
-        border-radius: 10px;
-    }
-
-    #gapfiller{
-        bottom: 23%;
-        position: relative;
-    }
-    /* end */
-
-    /* after clicking hamburger */
-    #hamburger.open>.disappear{
-        visibility: hidden;
-        opacity: 0;
-    }
-
-    #hamburger.open>#arrowbase{
-        transform: translateY(-40%) rotate(90deg) scaleX(-75%);
-    }
-
-    #hamburger.open>#arrowheads>#arrowhead_left{
-        transform: rotate(45deg) translateX(20%) translateY(-50%);
-    }
-
-    #hamburger.open>#arrowheads>#arrowhead_right{
-        transform: rotate(-45deg) translateX(-20%) translateY(-50%);
-    }
-
-    nav.open{
-        position: relative;
-        opacity: 1;
-        background-color: rgba(255, 255, 255, 0.102);
-        width: 100vw;
-    }
-
-    nav.open>ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 3px;
-        margin: 0;
-    }
-    
-    nav.open>ul>li{
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        width:90%;
-        background-color: rgba(0, 0, 0, 0.328);
-        border-radius: 4px;
-    }
-
-    nav.open>ul>li:nth-child(1){
-        margin-top: 3px;
-    }
-
-    nav.open>ul>li:nth-last-child(1){
-        margin-bottom: 3px;
-    }
-
-    nav.open>ul>li>a{
-        display: inline-block;
-        width: 100%;
-    }
-}
-    /* end */
 
 @media only screen and (max-width: 1200px) {
     #cookies_box{
