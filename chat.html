@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ChatCBT</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="templates(stuff that's on several pages)/header.css">
     <link rel="stylesheet" href="public/css/chat.css">
@@ -23,8 +23,8 @@
         <a class="desktop" href="index.html">Home</a>
         <a class="desktop" href="chat.html">Chat</a>
         <h2 id="logo">ChatCBT</h2>
-        <a class="desktop" href="index.html">About</a>
-        <a class="desktop" href="chat.html">Fanpage</a>
+        <a class="desktop" href="about.html">About</a>
+        <a class="desktop" href="fanpage.html">Fanpage</a>
     </header>
     <nav id="dropdown">
         <ul>
@@ -49,11 +49,11 @@
 
     <main id="upper">
         <h1>THE MOST POWERFUL AI CHAT MODEL TO DATE</h1>
-        <p>...is in its beta period right now. For the time being, it has has managed to process <b>3</b> separate queries. Harness the power of this website to view the query answers, or utilize the experimental yet groundbreaking custom query feature. Now begins the next revolution.</p>
+        <p>...is in its beta period right now. For the time being, it has managed to process <b>3</b> separate queries. Harness the power of this website to view the query answers, or utilize the experimental yet groundbreaking custom query feature. Now begins the next revolution.</p>
         <img id="downarrow" src="public/img/downarrow.png"/>
     </main>
 
-    <main id="lower">
+    <main id="middle">
         <aside>
             <h5>Query #1</h5>
             <h4>Q: Hello ChatCBT AI, this is your team of creators speaking! We are currently in the office celebrating your birth/launch! As this is officially the first ever query sent to you, we'd like to know: how does it feel to be alive?</h4>
@@ -71,6 +71,18 @@
         </article>
     </main>
 
+    <main id="lower">
+        <h3>Try the CustomQuery AI technology powered by <br> advanced quantum cybercloud technology science</h3>
+        <div id="form">
+            <input type="text" placeholder="Go on, ask me something!" autocomplete="off">
+            <button id="QueryClick">Submit Query</button>
+        </div>
+        <div id="QueryResponse"></div>
+    </main>
+
+   
+
     <script src="public/js/hamburger.js"></script>
+    <script src="public/js/chat.js"></script>
 </body>
 </html>

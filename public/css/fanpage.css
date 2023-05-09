@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100;
+    height: 100;
+    overflow: hidden;
+}
+
+img#background{
+    position: absolute;
+    z-index: -999;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1{
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+img#signpost{
+    position: absolute;
+    left: -80px;
+    bottom: -100px;
+    width: 400px;
+    rotate: 30deg;
+}
+
+main{
+    position: absolute;
+    display: flex;
+    height: 2.2vh;
+    top: 38vh;
+    left: 90vw;
+    transition: 1s ease-in-out;
+}
+
+main.animated{
+    height: 300px;
+    left: 30vw;
+}
+
+img#speechbubble{
+    opacity: 0;
+    transition: 0.7s ease-in-out;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body{
+
+    }
+
+    main.animated{
+        height: 170px;
+        left: 0vw;
+    }
+
+    img#background{
+        
+    }
+
+    img#signpost{
+
+    }
+
+}

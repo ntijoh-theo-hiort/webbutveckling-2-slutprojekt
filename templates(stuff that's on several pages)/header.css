@@ -149,6 +149,10 @@ nav{
     nav.open>ul>li:nth-last-child(1){
         margin-bottom: 3px;
     }
+    
+    nav.open>ul>li>img{
+        width: 20px;
+    }
 
     nav.open>ul>li>a{
         display: inline-block;
